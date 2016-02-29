@@ -15,6 +15,15 @@
 		83F3C9111C84BC1A005D37A4 /* FirebaseIntroMiniLessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C9101C84BC1A005D37A4 /* FirebaseIntroMiniLessonUITests.swift */; };
 		83F3C91F1C84BCBF005D37A4 /* RestaurantListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C91E1C84BCBF005D37A4 /* RestaurantListTableViewController.swift */; };
 		83F3C9211C84BFD3005D37A4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C9201C84BFD3005D37A4 /* Restaurant.swift */; };
+		BC53EA851C84E4CD00191335 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC53EA831C84E4C000191335 /* Firebase.framework */; };
+		BC53EA861C84E4CD00191335 /* Firebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC53EA831C84E4C000191335 /* Firebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC53EA891C84E4E800191335 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC53EA881C84E4E800191335 /* libicucore.tbd */; };
+		BC53EA8B1C84E4EE00191335 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC53EA8A1C84E4EE00191335 /* Security.framework */; };
+		BC53EA8D1C84E4F600191335 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC53EA8C1C84E4F600191335 /* SystemConfiguration.framework */; };
+		BC53EA8F1C84E50200191335 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC53EA8E1C84E50200191335 /* libc++.tbd */; };
+		BC53EA911C84E51200191335 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC53EA901C84E51200191335 /* CFNetwork.framework */; };
+		BC53EA941C84E54F00191335 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53EA931C84E54F00191335 /* FirebaseController.swift */; };
+		BCB892851C84E6E8003B9FF8 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB892841C84E6E8003B9FF8 /* RestaurantController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BC53EA871C84E4CD00191335 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC53EA861C84E4CD00191335 /* Firebase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		83F3C8ED1C84BC1A005D37A4 /* FirebaseIntroMiniLesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseIntroMiniLesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F3C8F01C84BC1A005D37A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +72,14 @@
 		83F3C9121C84BC1A005D37A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F3C91E1C84BCBF005D37A4 /* RestaurantListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantListTableViewController.swift; path = ../RestaurantListTableViewController.swift; sourceTree = "<group>"; };
 		83F3C9201C84BFD3005D37A4 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		BC53EA831C84E4C000191335 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		BC53EA881C84E4E800191335 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		BC53EA8A1C84E4EE00191335 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BC53EA8C1C84E4F600191335 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BC53EA8E1C84E50200191335 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BC53EA901C84E51200191335 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BC53EA931C84E54F00191335 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		BCB892841C84E6E8003B9FF8 /* RestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC53EA8F1C84E50200191335 /* libc++.tbd in Frameworks */,
+				BC53EA891C84E4E800191335 /* libicucore.tbd in Frameworks */,
+				BC53EA911C84E51200191335 /* CFNetwork.framework in Frameworks */,
+				BC53EA8D1C84E4F600191335 /* SystemConfiguration.framework in Frameworks */,
+				BC53EA8B1C84E4EE00191335 /* Security.framework in Frameworks */,
+				BC53EA851C84E4CD00191335 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +116,7 @@
 		83F3C8E41C84BC1A005D37A4 = {
 			isa = PBXGroup;
 			children = (
+				BC53EA921C84E53B00191335 /* Frameworks */,
 				83F3C8EF1C84BC1A005D37A4 /* FirebaseIntroMiniLesson */,
 				83F3C9041C84BC1A005D37A4 /* FirebaseIntroMiniLessonTests */,
 				83F3C90F1C84BC1A005D37A4 /* FirebaseIntroMiniLessonUITests */,
@@ -100,8 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				83F3C91E1C84BCBF005D37A4 /* RestaurantListTableViewController.swift */,
+				BCB892841C84E6E8003B9FF8 /* RestaurantController.swift */,
 				83F3C9201C84BFD3005D37A4 /* Restaurant.swift */,
 				83F3C8F01C84BC1A005D37A4 /* AppDelegate.swift */,
+				BC53EA931C84E54F00191335 /* FirebaseController.swift */,
 				83F3C8F41C84BC1A005D37A4 /* Main.storyboard */,
 				83F3C8F71C84BC1A005D37A4 /* Assets.xcassets */,
 				83F3C8F91C84BC1A005D37A4 /* LaunchScreen.storyboard */,
@@ -128,6 +168,19 @@
 			path = FirebaseIntroMiniLessonUITests;
 			sourceTree = "<group>";
 		};
+		BC53EA921C84E53B00191335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC53EA901C84E51200191335 /* CFNetwork.framework */,
+				BC53EA8E1C84E50200191335 /* libc++.tbd */,
+				BC53EA8C1C84E4F600191335 /* SystemConfiguration.framework */,
+				BC53EA8A1C84E4EE00191335 /* Security.framework */,
+				BC53EA881C84E4E800191335 /* libicucore.tbd */,
+				BC53EA831C84E4C000191335 /* Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +191,7 @@
 				83F3C8E91C84BC1A005D37A4 /* Sources */,
 				83F3C8EA1C84BC1A005D37A4 /* Frameworks */,
 				83F3C8EB1C84BC1A005D37A4 /* Resources */,
+				BC53EA871C84E4CD00191335 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,7 +315,9 @@
 			files = (
 				83F3C91F1C84BCBF005D37A4 /* RestaurantListTableViewController.swift in Sources */,
 				83F3C8F11C84BC1A005D37A4 /* AppDelegate.swift in Sources */,
+				BC53EA941C84E54F00191335 /* FirebaseController.swift in Sources */,
 				83F3C9211C84BFD3005D37A4 /* Restaurant.swift in Sources */,
+				BCB892851C84E6E8003B9FF8 /* RestaurantController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseIntroMiniLesson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DevMtn.FirebaseIntroMiniLesson;
@@ -414,6 +474,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseIntroMiniLesson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DevMtn.FirebaseIntroMiniLesson;
@@ -488,6 +552,7 @@
 				83F3C9171C84BC1A005D37A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F3C9181C84BC1A005D37A4 /* Build configuration list for PBXNativeTarget "FirebaseIntroMiniLessonTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +561,7 @@
 				83F3C91A1C84BC1A005D37A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F3C91B1C84BC1A005D37A4 /* Build configuration list for PBXNativeTarget "FirebaseIntroMiniLessonUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +570,7 @@
 				83F3C91D1C84BC1A005D37A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
